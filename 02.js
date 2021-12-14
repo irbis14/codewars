@@ -7,6 +7,7 @@ function filter_list(l) {
     if (Number.isInteger(item)) {
       return arr.push(item);
     }
+    ("");
   });
   return arr;
 }
