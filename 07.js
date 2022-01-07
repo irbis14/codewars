@@ -12,8 +12,7 @@ function pigIt(str) {
   return str
     .split(" ")
     .map((item) => {
-      if (typeof item === "string") {
-        const letters = item.split("");
+      if (item.match(/[a-zA-Z]/)) {
         return `${item.slice(1)}${item.slice(0, 1)}ay`;
       } else {
         return item;
@@ -22,5 +21,5 @@ function pigIt(str) {
     .join(" ");
 }
 
-const a = pigIt("Pig latin is cool");
+const a = pigIt("Hello world !");
 console.log(a);
