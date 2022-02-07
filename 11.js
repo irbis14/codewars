@@ -4,7 +4,7 @@ moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]     */
 
 const moveZeros = function (arr) {
   const newArr = arr.filter((item) => item !== 0);
-  const howManyZeros = arr.length - withoutZeros.length;
+  const howManyZeros = arr.length - newArr.length;
   for (let i = 0; i < howManyZeros; i += 1) {
     newArr.push(0);
   }
