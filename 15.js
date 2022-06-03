@@ -45,7 +45,6 @@ function printerError(s) {
   return `${numberErrors}/${error.length}`;
 }
 
-// `${acc}/${array.length}`;
 const a = printerError(
   "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"
 );
